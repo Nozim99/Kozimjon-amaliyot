@@ -1,0 +1,92 @@
+.maydon{
+  background-color: aquamarine;
+  width: 1300px;
+  margin: 50px auto;
+  height: 300px;
+  background-image: url('./img/download.jpg');
+  background-size: contain;
+  background-repeat: repeat-x;
+  position: relative;
+}
+.car{
+  transform: scale(-0.5, 0.5);
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+}
+.button{
+  margin-top: 30px;
+  text-align: center;
+}
+button{
+  padding: 5px 10px;
+}
+.right {
+  animation: right 500ms linear forwards;
+}
+.left{
+  animation: left 500ms linear forwards;
+}
+.div{
+  text-align: center;
+  margin-top: 20px;
+}
+span {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(15, 99, 255);
+  background-color: rgba(0, 255, 255, 0.151);
+  color: rgb(0, 129, 129);
+  border-radius: 5px;
+  padding: 10px 100px;
+}
+.div-1, .div-2{
+  display: none;
+}
+.hide{
+  animation: hide 500ms linear forwards;
+}
+.show{
+  animation: show 500ms linear forwards;
+}
+.start_left, .start_right {
+  border: none;
+  background-color: white;
+}
+.start_none{
+  display: none;
+}
+.start_btn, .start_none {
+  cursor: pointer;
+}
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes left {
+  from{
+    transform: scale(-0.5, 0.5);
+  }
+  to {
+    transform: scale(0.5, 0.5);
+  }
+}
+@keyframes right {
+  from{
+    transform: scale(0.5, 0.5);
+  }
+  to {
+    transform: scale(-0.5, 0.5);
+  }
+}
